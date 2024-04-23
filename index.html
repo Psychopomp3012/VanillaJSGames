@@ -12,12 +12,15 @@
         body {
             background-color: black;
             overflow-x: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
         }
         .button {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            margin: 20px;
             background-color: white;
             color: black;
             text-transform: uppercase;
@@ -60,7 +63,7 @@
             border: 3px solid white;
             top: calc(var(--circle-size) / 2 * -1);
             left: calc(var(--circle-size) / 2 * -1);
-            z-index: 0;
+            z-index: -1;
         }
         div.index {
             position: relative;
